@@ -4,6 +4,7 @@ This is a Javascript library that can create SVG images for hieroglyphs encoded 
 
 This library is independent from the library that contains a (draft of a) Javascript version of the JSESH hieroglyphs editor. 
 
+You can try out this library on [JSFiddle](https://jsfiddle.net/maartenes/ovgr912c/)
 
 ## Related projects
 
