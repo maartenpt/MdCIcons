@@ -1,7 +1,8 @@
 var MdCIcons = (function () {
 
 	lineheight = 24; spacing = 2;
-	svgbase = "https://quest.ms.mff.cuni.cz/teitok-dev/teitok/jsesh/gards/";
+	// svgbase = "https://quest.ms.mff.cuni.cz/teitok-dev/teitok/jsesh/gards/";
+	svgbase = "https://raw.githubusercontent.com/rosmord/JavaScriptSesh/master/images/glyphs/";
     mdcclass = "token-glyphs";
     mdcatt = "title";
 	textheight = 94;
