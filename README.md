@@ -16,7 +16,7 @@ You initiate the function as follows:
 
 Each SVG will combine base glyphs into carats. The base glyphs (gardiner numbers) will be generated in a hidden DIV. Base glyphs that have a unicode symbol will (by default) be generated as text elements, while all glyphs that do not have a unicode symbol will be loaded as raw SVG over Ajax. So the base glyph A1 will be generated as text (𓀀) while A71 is not in the Unicode block, so it will be loaded from a file A71.svg at the specified server, by default from the JavaScriptSesh project: ![https://raw.githubusercontent.com/rosmord/JavaScriptSesh/master/images/glyphs/A71.svg](https://raw.githubusercontent.com/rosmord/JavaScriptSesh/master/images/glyphs/A71.svg). It is possible to load all glyphs as SVG, which will result in more uniform glyphs, but the SVG will be heavier, and it will not be possible to copy the text from the SVG.
 
-The `draw` function can take a JSON object as its argument, where options can be specified:
+The `draw` function can take a JSON object as its argument, where the following options can be specified:
 
 | Features | Values | Description |
 |----------|---------|------------|
