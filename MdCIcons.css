@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'JSesh';
+    src: url('http://127.0.0.1/JSeshFont.ttf');
+}
+svg text.sign { font-family: 'JSesh', 'Monaco', Serif; }
+svg text.unknown { font-family: 'Monaco', Serif; color: red; fill: red; }
