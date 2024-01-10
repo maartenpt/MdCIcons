@@ -22,7 +22,8 @@ The `draw` function can take a JSON object as its argument, where options can be
 |----------|---------|------------|
 | lineheight | int | height of the SVG image |
 | unicode | bool | when set to false, the system will always use SVG images from the glyph URL |
-| svgurl | string | URL where there the individual glyphs will be loaded from |
+| svgurl | string | URL where the individual glyphs will be loaded from |
+| css | string | URL for a CSS style sheet for the SVG |
 | attr | string | Attribute to use for the MdC code (default: @title) |
 | class | string | Class to use for the hieroglyph elements (default: token-glyphs) |
 
