@@ -1,6 +1,6 @@
 # Manuel de Codage Icons
 
-This is a Javascript library that can create SVG images for hieroglyphs encoded in the Manuel de Codage (MdC) standard.
+This is a Javascript library that can create SVG images for hieroglyphs encoded in the Manuel de Codage (MdC) standard. The most complete description of MdC can be found [here](http://www.catchpenny.org/codage/).
 
 The library will generate SVG images for all hieroglyphs on a page - similar to the way amazingfonts produce icons. The default is to look for all the spans of the class `token-glyphs`, and produce the SVG as the innerHTML based on the MdC code in the `@title` attribute. So it will produce Hieroglyphs for all elements of the following form:
 
