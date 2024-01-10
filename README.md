@@ -18,7 +18,7 @@ Each SVG will combine base glyphs into carats. The base glyphs (gardiner numbers
 
 The `draw` function can take a JSON object as its argument, where the following options can be specified:
 
-| Features | Values | Description |
+| Feature | Value | Description |
 |----------|---------|------------|
 | lineheight | int | height of the SVG image |
 | unicode | bool | when set to false, the system will always use SVG images from the glyph URL |
