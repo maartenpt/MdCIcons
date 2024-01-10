@@ -1,6 +1,8 @@
 # Manuel de Codage Icons
 
-This is a Javascript library that can create SVG images for hieroglyphs encoded in the Manuel de Codage (MdC) standard. The most complete description of MdC can be found [here](http://www.catchpenny.org/codage/).
+This is a Javascript library that can create SVG images for hieroglyphs encoded in the Manuel de Codage (MdC) standard. The most complete description of MdC can be found [here](http://www.catchpenny.org/codage/). The library is in principle intended for individual hieroglyphs to be displayed, not to support full MdC. This is done by the `draw` function. However, there is support for a more complete MdC code in the `parse` function. The `parse` function will first parse a complete MdC (or .gly) file into text and hieroglyphs, and then call upon the draw function to render the individual hieroglyphs it generated.
+
+## draw
 
 The library will generate SVG images for all hieroglyphs on a page - similar to the way amazingfonts produce icons. The default is to look for all the spans of the class `token-glyphs`, and produce the SVG as the innerHTML based on the MdC code in the `@title` attribute. So it will produce Hieroglyphs for all elements of the following form:
 
@@ -27,8 +29,17 @@ The `draw` function can take a JSON object as its argument, where the following 
 | attr | string | Attribute to use for the MdC code (default: @title) |
 | class | string | Class to use for the hieroglyph elements (default: token-glyphs) |
 
+You can try out the draw function on [JSFiddle](https://jsfiddle.net/maartenes/ovgr912c/)
 
-You can try out this library on [JSFiddle](https://jsfiddle.net/maartenes/ovgr912c/)
+## parse
+
+The `parse` function is called similar to the `draw` function:
+
+```
+<script>MdCIcons.parse();</script>
+```
+
+The parse function looks for a div with @id="glydiv", and parse the innerText as MdC. It converts the plain text into text and span elements, and then converts the span elements into SVG images using the draw function.
 
 ## Related projects
 
