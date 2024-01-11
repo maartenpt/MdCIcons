@@ -23,7 +23,7 @@ The `draw` function can take a JSON object as its argument, where the following 
 | Feature | Value | Description |
 |----------|---------|------------|
 | lineheight | int | height of the SVG image |
-| unicode | bool | when set to false, the system will always use SVG images from the glyph URL |
+| unicode | bool | when set to false, the system will always load SVG images even if there is a unicode character |
 | svgurl | string | URL where the individual glyphs will be loaded from |
 | css | string | URL for a CSS style sheet for the SVG |
 | attr | string | Attribute to use for the MdC code (default: @title) |
