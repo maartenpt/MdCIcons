@@ -4,7 +4,7 @@ This is a Javascript library that can create SVG images for hieroglyphs encoded 
 
 ## draw
 
-The library will generate SVG images for all hieroglyphs on a page - similar to the way [fontawesome](https://fontawesome.com/) produce icons. The default is to look for all the spans of the class `token-glyphs`, and produce the SVG as the innerHTML based on the MdC code in the `@title` attribute. So it will produce Hieroglyphs for all elements of the following form:
+The library will generate SVG images for all hieroglyphs on a page - similar to the way for instance [fontawesome](https://fontawesome.com/) produces icons. The default is to replace for all the `span`s of the class `token-glyphs`, and produce the hieroglyph as an SVG image (the innerHTML) based on the MdC code in the `@title` attribute. So it will produce Hieroglyphs for all elements of the following form:
 
 ```
 <span class="token-glyphs" title="M17-X1"></span>
