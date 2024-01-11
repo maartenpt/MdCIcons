@@ -20,14 +20,14 @@ Each SVG will combine base glyphs into carats. The base glyphs (gardiner numbers
 
 The `draw` function can take a JSON object as its argument, where the following options can be specified:
 
-| Feature | Value | Description |
-|----------|---------|------------|
-| lineheight | int | height of the SVG image |
-| unicode | bool | when set to false, the system will always load SVG images even if there is a unicode character |
-| svgurl | string | URL where the individual glyphs will be loaded from |
-| css | string | URL for a CSS style sheet for the SVG |
-| attr | string | Attribute to use for the MdC code (default: @title) |
-| class | string | Class to use for the hieroglyph elements (default: token-glyphs) |
+| Feature | Value | Description | Default value |
+|----------|---------|------------|----|
+| lineheight | int | height of the SVG image | 24px |
+| unicode | bool | when set to false, the system will always use SVG images from the glyph URL | true |
+| svgurl | string | URL where the individual glyphs will be loaded from | [JavaScriptSesh](https://raw.githubusercontent.com/rosmord/JavaScriptSesh/master/images/glyphs/) |
+| css | string | URL for a CSS style sheet for the SVG | none |
+| attr | string | Attribute to use for the MdC code  | title |
+| class | string | Class to use for the hieroglyph elements  | token-glyphs |
 
 You can try out the draw function on [JSFiddle](https://jsfiddle.net/maartenes/ovgr912c/)
 
